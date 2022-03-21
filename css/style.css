@@ -7,3 +7,64 @@
 html {
     font-family: 'Montserrat', sans-serif ;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.float-sx {
+    float: left ;
+}
+
+
+main {
+    width: 100vw ;
+    height: calc(100vh - 100px) ;
+
+
+    /*debug*/
+    background-color: bisque;
+}
+
+footer {
+    width: 100vw ;
+    height: 100px ;
+
+
+    /*debug*/
+    background-color: cornflowerblue ;
+}
+
+
+.barra-upgrade {
+    width: calc(100% - 200px) ;
+    height: 100px ;
+    position: fixed ;
+    right: 0 ;
+    
+
+    /*debug*/
+    background-color: darkgray ; 
+}
+
+
+.barra-laterale {
+    width: 200px ;
+    height: 100% ;
+
+    /*debug*/
+    background-color:lightcoral ; 
+
+}
+
+.parte-centrale {
+    width: calc(100% - 200px) ;
+    height: 100% ;
+    overflow-y: scroll ;
+    padding-top: 120px ;
+
+    /*debug*/
+    background-color:darkkhaki ; 
+}
