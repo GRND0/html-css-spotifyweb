@@ -18,6 +18,10 @@ html {
     float: left ;
 }
 
+.testo-bianco {
+    color: white ;
+}
+
 
 main {
     width: 100vw ;
@@ -28,25 +32,24 @@ main {
     background-color: bisque;
 }
 
-footer {
-    width: 100vw ;
-    height: 100px ;
-
-
-    /*debug*/
-    background-color: cornflowerblue ;
-}
-
 
 .barra-upgrade {
     width: calc(100% - 200px) ;
     height: 100px ;
     position: fixed ;
     right: 0 ;
+    background-color: rgba(0, 0, 0, 0.5);
     
+}
 
-    /*debug*/
-    background-color: darkgray ; 
+#pulsante-upgrade {
+    position: absolute ;
+    top: 1.3em ;
+    right: 1.3em ;
+    padding: .8em 2em ;
+    border: solid 1px white ;
+    border-radius: 2em ;
+    font-weight: bold ;
 }
 
 
@@ -67,4 +70,103 @@ footer {
 
     /*debug*/
     background-color:darkkhaki ; 
+}
+
+
+
+footer {
+    width: 100vw ;
+    height: 100px ;
+    background-color: #282828 ;
+    display: flex ;
+    flex-direction: row ;
+    align-content: space-between ;
+}
+
+.contenitore-flex {
+    height: 100% ;
+    display: flex ;
+    flex-direction: row ;
+    align-items: center ;
+    width: calc(100%/3);
+    color: white ;
+
+}
+
+#info-brano {
+    width: 50% ;
+    height: 100% ;
+    padding: 1em 1em ;
+
+}
+
+#artista-titolo {
+ 
+   height: 100% ;
+   width: 50% ;
+
+}
+
+#miniatura-brano {
+    height: 100% ;
+    width: 50% ;
+
+    object-fit: contain ;
+
+}
+
+
+
+#controlli {
+    margin: 0 1em ;
+    font-size: 1.5em ;
+}
+
+#durata span, #barra-tempo {
+    display: inline-block ;
+
+}
+
+
+#barra-tempo {
+    position: relative ;
+    height: .2em;
+    width: 70% ;
+    margin: 0 1em ;
+    background-color: grey ;
+    border-radius: .2em ;
+    
+   
+}
+
+#barra-bianca {
+    height: 100% ;
+    width: 25% ;
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+    background-color: white ;
+    border-radius: .2em ;
+    
+
+}
+
+#barra-volume {
+    width: 15% ;
+    position: relative ;
+    height: .2em ;
+    background-color: grey ;
+    border-radius: .2em ;
+}
+#volume {
+    justify-content: flex-end ;
+}
+
+#volume * {
+    margin-right: 1.2em ;
+   
+}
+
+#volume i {
+    font-size: .8em ;
 }
