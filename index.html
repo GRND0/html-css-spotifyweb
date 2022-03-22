@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
@@ -37,33 +37,38 @@
     </main>
 
     <footer>
-        <div class="contenitore-flex">
-            <div id="info-brano">
-                <img id="miniatura-brano" src="img/sinister.jpeg" alt="Sinister">
-                <div id="artista-titolo">
-                    <span>Sinister</span>
-                    <span>Brano Nome</span>
-                </div>
+        <div class="contenitore-flex" id="brano-artista">
+
+            <div id="miniatura-brano">
+                <img src="img/sinister.jpeg" alt="Sinister">
             </div>
-            <div>
+
+            <div id="info-brano">
+                <span>Sinister</span>
+                <span class="testo-grigio">Brano Nome</span>
+            </div>
+
+            <div id="icone-brano" class="testo-grigio">
                 <i class="far fa-heart"></i>
                 <i class="far fa-folder"></i>
             </div>
-
         </div>
+
         <div class="contenitore-flex" id="durata">
             <div id="controlli">
                 <i class="fas fa-random"></i>
                 <i class="fas fa-step-backward"></i>
-                <i class="far fa-play-circle"></i>
+                <i id="play" class="far fa-play-circle"></i>
                 <i class="fas fa-step-forward"></i>
                 <i class="fas fa-redo-alt"></i>
             </div>
-            <span>0:25</span>
-            <div id="barra-tempo">
-                <div id="barra-bianca"></div>
+            <div id="tempo">
+                <span>0:25</span>
+                <div id="barra-tempo">
+                    <div id="barra-bianca"></div>
+                </div>
+                <span>4.35</span>
             </div>
-            <span>4.35</span>
 
         </div>
         <div class="contenitore-flex" id="volume">
