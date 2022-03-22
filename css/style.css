@@ -71,6 +71,7 @@ main {
 #laterale-superiore {
     width: 100% ;
     height: calc(100% - 50px);
+    min-height: 350px ;
     display: flex ;
     flex-direction: column ;
     overflow-y: hidden ;
@@ -101,19 +102,27 @@ main {
 
 #playlist {
     padding: 0 1em;
+    flex-grow: 1 ;
+    overflow: hidden;
 }
 
 #playlist span {
     font-weight: 500 ;
     margin-bottom: .5em ;
     color: white ;
+    display: block ;
 }
 
 #playlist li {
-    overflow-y: scroll ;
+    
     padding: .5em 0 ;
     font-size: .8em ;
 
+}
+
+#playlist ul {
+    overflow-y: auto;
+    height: 80% ;
 }
 
 .fa-plus {
