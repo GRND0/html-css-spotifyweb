@@ -24,7 +24,7 @@ html {
 
 
 main {
-    width: 100vw ;
+    width: 100% ;
     height: calc(100vh - 100px) ;
 
 
@@ -38,6 +38,7 @@ main {
     height: 100px ;
     position: fixed ;
     right: 0 ;
+    top: 0 ;
     background-color: rgba(0, 0, 0, 0.5);
     
 }
