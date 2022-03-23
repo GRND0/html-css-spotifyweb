@@ -30,10 +30,8 @@ html {
 main {
     width: 100% ;
     height: calc(100vh - 100px) ;
+    overflow: hidden ;
 
-
-    /*debug*/
-    background-color: bisque;
 }
 
 
@@ -58,6 +56,46 @@ main {
 }
 
 
+.menu-centrale {
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-evenly ;
+    
+    width: 50% ;
+    margin: 0 auto ;
+
+}
+
+.menu-centrale a {
+    text-decoration: none ;
+    text-transform: uppercase ;
+}
+
+.menu-centrale div {
+    width: calc(100%/6);
+}
+
+
+#recenti {
+    margin: 1em 1em ;
+}
+
+.galleria-centrale {
+    display: flex ;
+    margin: 0 0 0 1em ;
+    
+
+}
+
+.album-galleria {
+    width: calc(100%/6);
+    margin: 0 .5em ;
+}
+
+.album-galleria img {
+    width: 100% ;
+}
+
 .barra-laterale {
     width: 200px ;
     height: 100% ;
@@ -81,6 +119,10 @@ main {
 #logo {
     width: 80% ;
     padding: 1em ;
+}
+
+#nav {
+    margin: 1em 0 ; 
 }
 
 #nav img {
@@ -123,6 +165,7 @@ main {
 #playlist ul {
     overflow-y: auto;
     height: 80% ;
+    margin-top: 1em ;
 }
 
 .fa-plus {
@@ -144,7 +187,7 @@ main {
     padding-top: 120px ;
 
     /*debug*/
-    background-color:darkkhaki ; 
+    background-color: papayawhip ; 
 }
 
 
