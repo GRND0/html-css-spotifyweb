@@ -53,16 +53,19 @@ main {
     border: solid 1px white ;
     border-radius: 2em ;
     font-weight: bold ;
+    
+}
+
+#pulsante-upgrade:hover {
+    transform: scale(1.1);
 }
 
 
 .menu-centrale {
-    text-align: center;
 
-    
+    text-align: center;
     width: 50% ;
     margin: 0 auto ;
-
 }
 
 .menu-centrale a {
@@ -71,15 +74,26 @@ main {
     color: gray ;
 }
 
+.menu-centrale a:hover {
+    color: white ;
+}
+
 .menu-centrale div {
     display: inline-block ;
     margin: 0 1em ;
     font-weight: 500 ;
 }
 
+.selezione {
+    border-bottom: 2px solid #adff2f ;
+    padding-bottom: .1em ;
+}
+
 
 .titolo {
     margin: 1em 1em ;
+    font-size: 2em ;
+   
     
 }
 
@@ -107,13 +121,15 @@ main {
 }
 
 .album-galleria h4 {
+    font-size: 1.3em ;
     font-weight: bold ;
     color: white ;
-    margin: 1em 0 ;
+    margin: .6em 0 ;
 }
 
 .album-galleria h6 {
     color: gray ;
+    font-size: .8em;
 }
 
 .popolari .album-galleria>img {
@@ -133,7 +149,7 @@ main {
 
 #laterale-superiore {
     width: 100% ;
-    height: calc(100% - 50px);
+    height: calc(100% - 80px);
     min-height: 350px ;
     display: flex ;
     flex-direction: column ;
@@ -151,12 +167,26 @@ main {
 }
 
 #nav img {
-    height: 1.2em ;
+    height: 1.5em ;
+    vertical-align: middle ;
 }
 
 #nav div {
-    margin: .5em 1em ;
+    margin: .5em 1em ;   
 }
+
+#nav div:hover {
+    color: white ;
+}
+
+#crea:hover {
+    color: white ;
+}
+
+#crea:hover #plus {
+    background-color: white ;
+}
+
 
 #plus {
     width: 2em ;
@@ -181,10 +211,18 @@ main {
 }
 
 #playlist li {
-    
     padding: .5em 0 ;
     font-size: .8em ;
 
+}
+
+#playlist li>a {
+    text-decoration: none ;
+    color: gray;
+}
+
+#playlist li>a:hover {
+    color: white ;
 }
 
 #playlist ul {
@@ -202,8 +240,61 @@ main {
 
 #laterale-inferiore {
     width: 100% ;
-    height: 50px ;
+    height: 80px ;
+    
 }
+
+#installa {
+    width: 90% ;
+    height: 50% ;
+    margin: 0 auto;
+    border-bottom: 1px solid grey ;
+    line-height: 40px ;
+}
+
+#installa:hover {
+    color: white ;
+}
+
+#installa img {
+    height: 1em ;
+    
+    vertical-align: middle;
+}
+
+#installa span {
+    vertical-align: middle ;
+    margin-left: .6em ;
+}
+
+#utente {
+    width: 90% ;
+    height: 50% ;
+    margin: 0 auto ;
+    line-height: 40px ;
+    
+    
+}
+
+#utente span {
+    vertical-align: middle ;
+    font-weight: bold ;
+    color: white ;
+    margin-left: .5em ;
+}
+
+#icona-tonda {
+    height: 1.5em ;
+    width: 1.5em ;
+    overflow: hidden ;
+    background-color: grey ;
+    border-radius: 1.5em ;
+    display: inline-block ;
+    vertical-align: middle ;
+   
+}
+
+
 
 .parte-centrale {
     width: calc(100% - 200px) ;
@@ -241,7 +332,8 @@ footer {
 }
 
 #miniatura-brano {
-  width: 30% ;
+  width: 20% ;
+  padding: 0 .5em ;
 
    
 }
@@ -249,6 +341,18 @@ footer {
 #miniatura-brano img {
     width: 100% ;
     
+}
+
+
+
+#miniatura-info:hover {
+    color: white ;
+    text-decoration: underline ;
+
+}
+
+#info-brano {
+    margin-left: .3em ;
 }
 
 #info-brano span {
@@ -263,11 +367,15 @@ footer {
     margin: 0 .3em ;
 }
 
+#icone-brano i:hover {
+    color: white ;
+}
+
 
 
 
 #controlli {
-    
+    padding: .2em ;
     font-size: 1em ;
   
 
@@ -275,10 +383,15 @@ footer {
 
 #controlli i {
     margin: .2em .5em ;
+    vertical-align: middle ;
 }
 
 #play {
     font-size: 2em ;
+}
+
+#play:hover {
+    transform: scale(1.2);
 }
 
 #durata {
@@ -296,7 +409,7 @@ footer {
 }
 
 #tempo span {
-    font-size: .6em ;
+    font-size: .7em ;
     font-weight: bolder ;
 }
 
@@ -308,8 +421,8 @@ footer {
 
 #barra-tempo {
     position: relative ;
-    height: .2em;
-    width: calc(100% - 81px) ;
+    height: .3em;
+    width: calc(100% - 88px) ;
     margin: 0 1em ;
     background-color: grey ;
     border-radius: .2em ;
@@ -325,8 +438,38 @@ footer {
     left: 0 ;
     background-color: white ;
     border-radius: .2em ;
-    
+}
 
+#indicatore {
+    position: absolute ;
+    left: 23% ;
+    width: .9em ;
+    height: .9em ;
+    border-radius: 100% ;
+    background-color: white ;
+    transform: translateY(-.4em);
+    visibility: hidden ;
+
+}
+
+#indicatore-volume {
+    position: absolute ;
+    left: 23% ;
+    width: .9em ;
+    height: .9em ;
+    border-radius: 100% ;
+    background-color: white ;
+    transform: translateY(-.4em);
+    visibility: hidden ;
+
+}
+
+#barra-tempo:hover #indicatore {
+    visibility: visible ;
+}
+
+#barra-bianca:hover {
+    background-color: #adff2f ;
 }
 
 #barra-volume {
@@ -336,6 +479,13 @@ footer {
     background-color: grey ;
     border-radius: .2em ;
 }
+
+#barra-volume:hover #indicatore-volume {
+    visibility: visible ;
+}
+
+
+
 #volume {
     justify-content: flex-end ;
     width: 350px ;
