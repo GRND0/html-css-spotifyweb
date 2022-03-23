@@ -57,9 +57,8 @@ main {
 
 
 .menu-centrale {
-    display: flex ;
-    flex-direction: row ;
-    justify-content: space-evenly ;
+    text-align: center;
+
     
     width: 50% ;
     margin: 0 auto ;
@@ -69,18 +68,28 @@ main {
 .menu-centrale a {
     text-decoration: none ;
     text-transform: uppercase ;
+    color: gray ;
 }
 
 .menu-centrale div {
-    width: calc(100%/6);
+    display: inline-block ;
+    margin: 0 1em ;
+    font-weight: 500 ;
 }
 
 
-#recenti {
+.titolo {
     margin: 1em 1em ;
+    
 }
 
-.galleria-centrale {
+.suggerimenti {
+    color: gray ;
+    margin: 0 1em ;
+    font-size: .8em ;
+}
+
+.galleria-flex {
     display: flex ;
     margin: 0 0 0 1em ;
     
@@ -90,10 +99,26 @@ main {
 .album-galleria {
     width: calc(100%/6);
     margin: 0 .5em ;
+    text-align: center ;
 }
 
 .album-galleria img {
     width: 100% ;
+}
+
+.album-galleria h4 {
+    font-weight: bold ;
+    color: white ;
+    margin: 1em 0 ;
+}
+
+.album-galleria h6 {
+    color: gray ;
+}
+
+.popolari .album-galleria>img {
+    border-radius: 100% ;
+
 }
 
 .barra-laterale {
@@ -185,9 +210,9 @@ main {
     height: 100% ;
     overflow-y: scroll ;
     padding-top: 120px ;
+    background-color: #141922 ;
 
-    /*debug*/
-    background-color: papayawhip ; 
+
 }
 
 
