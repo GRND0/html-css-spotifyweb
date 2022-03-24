@@ -38,6 +38,9 @@ main {
 .barra-upgrade {
     width: calc(100% - 200px) ;
     height: 100px ;
+    display: flex ;
+    justify-content: flex-end ;
+    align-items: center ;
     position: fixed ;
     right: 0 ;
     top: 0 ;
@@ -46,9 +49,7 @@ main {
 }
 
 #pulsante-upgrade {
-    position: absolute ;
-    top: 1.3em ;
-    right: 1.3em ;
+    margin-right: 1em ;
     padding: .8em 2em ;
     border: solid 1px white ;
     border-radius: 2em ;
@@ -111,7 +112,7 @@ main {
 }
 
 .album-galleria {
-    width: calc(100%/6);
+    width: calc(100%/6 - 1em);
     margin: 0 .5em ;
     text-align: center ;
 }
@@ -193,6 +194,17 @@ main {
 #logo {
     width: 80% ;
     padding: 1em ;
+}
+
+#logo-xs {
+   display: none ;
+    width: 80% ;
+    margin: 0 auto ;
+
+}
+
+#logo-xs img {
+    width: 100% ;
 }
 
 #nav {
@@ -429,6 +441,7 @@ footer {
 
 #durata {
     width: 40% ;
+    min-width: 212px ;
     flex-direction: column ;
    
 
@@ -543,7 +556,7 @@ footer {
     }
 
     .album-galleria {
-        width: calc(100%/4);
+        width: calc(100%/4 - 1em);
         margin: 0 .5em ;
         text-align: center ;
     }
@@ -558,8 +571,80 @@ footer {
     }
 
     .album-galleria {
-        width: calc(100%/2);
+        width: calc(100%/2 - 1em);
         margin: 0 .5em ;
         text-align: center ;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .galleria-flex {
+        display: flex ;
+        flex-wrap: wrap ;
+        margin: 0 0 0 1em ;
+    }
+
+    .album-galleria {
+        width: calc(100%/2 - 1em);
+        margin: 0 .5em ;
+        text-align: center ;
+    } 
+
+    .barra-upgrade {
+        width: calc(100% - 50px) ;
+        height: 100px ;
+        display: flex ;
+        justify-content: flex-end ;
+        align-items: center ;
+        position: fixed ;
+        right: 0 ;
+        top: 0 ;
+        background-color: rgba(0, 0, 0, 0.5);
+        
+    }
+
+    .parte-centrale {
+        width: calc(100% - 50px) ;
+        height: 100% ;
+        overflow-y: scroll ;
+        padding-top: 120px ;
+        background-color: #141922 ;
+    
+    
+    }
+
+    .barra-laterale {
+        width: 50px ;
+        height: 100% ;
+        background-color: #000000 ;
+    
+    
+    
+    }
+
+    #logo {
+        display: none ;
+        width: 80% ;
+        padding: 1em ;
+    }
+    
+    #logo-xs {
+        display: initial ;
+        width: 90% ;
+        margin: 0 auto ;
+        padding: .3em .3em ;
+    
+    }
+
+    #logo-xs img {
+        width: 100% ;
+    }
+
+    #playlist {
+        display: none ;
+        padding: 0 1em;
+        flex-grow: 1 ;
+        overflow: hidden;
+    }
+
 }
