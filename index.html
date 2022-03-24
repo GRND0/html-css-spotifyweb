@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+<!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<!--google fonts-->
+<!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<!--font awesome-->
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
+
 <body>
     <main class="clearfix">
+<!--CTA-->
         <div class="barra-upgrade">
             <div class="testo-bianco" id="pulsante-upgrade">
                 EFFETTUA L'UPGRADE 
             </div>
-
         </div>
-
+<!--CTA-->
+<!--barra fissa laterale-->
         <div class="barra-laterale float-sx testo-grigio" >
             <div id="laterale-superiore">
                 <div id="logo">
@@ -31,7 +35,6 @@
                 </div>
                 <div id="logo-xs">
                     <img src="img/logo-small.svg" alt="">
-
                 </div>
 
                 <div id="nav">
@@ -47,7 +50,6 @@
                         <img src="img/libreria.svg" alt="">
                         <span>La tua libreria</span>
                     </div>
-
                 </div>
 
                 <div id="playlist">
@@ -65,9 +67,7 @@
                         <li><a href="">Nome Playlist</a></li>
                         <li><a href="">Nome Playlist</a></li>
                     </ul>
-
                 </div>
-
             </div>
 
             <div id="laterale-inferiore">
@@ -81,14 +81,13 @@
                     </div>
                     <span>John Doe</span>
                 </div>
-
             </div>
-
         </div>
-
+<!--barra fissa laterale-->
+<!--parte principale del sito-->
         <div class="parte-centrale float-sx">
-
-            <div class="menu-centrale" >
+<!--menu centrale-->
+            <div class="menu-centrale">               
                 <div class="selezione"> 
                     <a href="">in evidenza</a>
                 </div>
@@ -108,13 +107,11 @@
                     <a href="">scopri</a>
                 </div>
             </div>
-
+<!--menu centrale-->
+<!--riprodotto di recente-->
             <div>
-
                 <h2 class="testo-bianco titolo">Recently played</h2>
-
                 <div class="galleria-flex">
-
                     <div class="album-galleria">
                         <div class="immagini-galleria"> 
                             <img src="img/metal_lifting.jpg" alt="">
@@ -177,13 +174,13 @@
                         <h4>Sinister</h4>
                         <h6>Subtitle</h6>
                     </div>
-
                 </div>
             </div>
-
+<!--riprodotto di recente-->
+<!--contenuto suggerito-->
             <div>
-                <h2 class="testo-bianco titolo" >Creato per John Doe</h2>
-                <span class="testo-grigio suggerimenti">Più ascolti, più accurati saranno i suggerimenti</span>
+                <h2 class="testo-bianco titolo">Creato per John Doe</h2>
+                <div class="testo-grigio suggerimenti">Più ascolti, più accurati saranno i suggerimenti</div>
                 <div class="galleria-flex">
                     <div class="album-galleria">
                         <div class="immagini-galleria"> 
@@ -205,10 +202,11 @@
                     </div>
                 </div>
             </div>
-
+<!--contenuto suggerito-->
+<!--artisti suggeriti-->
             <div class="popolari">
                 <h2 class="testo-bianco titolo" >Artisti più popolari</h2>
-                <span class="testo-grigio suggerimenti">Più ascolti, più accurati saranno i suggerimenti</span>
+                <div class="testo-grigio suggerimenti">Più ascolti, più accurati saranno i suggerimenti</div>
                 <div class="galleria-flex">
                     <div class="album-galleria">
                         <div class="immagini-galleria"> 
@@ -230,14 +228,14 @@
                     </div>
                 </div>
             </div>
-
+<!--artisti suggeriti-->
         </div>
-
     </main>
-
+<!--parte principale del sito-->
+<!--footer-->
     <footer>
+<!--info brano corrente-->
         <div class="contenitore-flex" id="brano-artista">
-
             <div id="miniatura-brano">
                 <img src="img/sinister.jpeg" alt="Sinister">
             </div>
@@ -252,7 +250,8 @@
                 <i class="far fa-folder"></i>
             </div>
         </div>
-
+<!--info brano corrente-->
+<!--controlli riproduzione e barra durata-->
         <div class="contenitore-flex" id="durata">
             <div id="controlli">
                 <i class="fas fa-random"></i>
@@ -269,8 +268,9 @@
                 </div>
                 <span>4.35</span>
             </div>
-
         </div>
+<!--controlli riproduzione e barra durata-->
+<!--controlli volume-->
         <div class="contenitore-flex" id="volume">
             <i class="far fa-list-ul"></i>
             <i class="fas fa-desktop"></i>
@@ -279,11 +279,9 @@
                 <div id="barra-bianca"></div>
                 <div id="indicatore-volume"></div>
             </div>   
-
-
         </div>
-
+<!--controlli volume-->
     </footer>
-    
+<!--footer-->
 </body>
 </html>

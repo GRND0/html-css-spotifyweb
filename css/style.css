@@ -1,3 +1,4 @@
+/*COMMON*/
 * {
     margin: 0 ;
     padding: 0 ;
@@ -7,6 +8,8 @@
 html {
     font-family: 'Montserrat', sans-serif ;
 }
+
+/*UTILITY*/
 
 .clearfix::after {
     content: "";
@@ -26,13 +29,52 @@ html {
     color: gray ;
 }
 
+/*REGOLE MACRO SEZIONI*/
 
 main {
     width: 100% ;
     height: calc(100vh - 100px) ;
     overflow: hidden ;
-
 }
+
+.barra-laterale {
+    width: 200px ;
+    height: 100% ;
+    background-color: #000000 ;
+}
+
+.parte-centrale {
+    width: calc(100% - 200px) ;
+    height: 100% ;
+    overflow-y: scroll ;
+    padding-top: 120px ;
+    background-color: #141922 ;
+}
+
+footer {
+    width: 100%;
+    height: 100px ;
+    background-color: #282828 ;
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-between ;
+}
+
+#laterale-superiore {
+    width: 100% ;
+    height: calc(100% - 80px);
+    min-height: 350px ;
+    display: flex ;
+    flex-direction: column ;
+    overflow-y: hidden ;
+}
+
+#laterale-inferiore {
+    width: 100% ;
+    height: 80px ;   
+}
+
+
 
 
 .barra-upgrade {
@@ -44,8 +86,8 @@ main {
     position: fixed ;
     right: 0 ;
     top: 0 ;
-    background-color: rgba(0, 0, 0, 0.5);
-    
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1 ;   
 }
 
 #pulsante-upgrade {
@@ -53,18 +95,14 @@ main {
     padding: .8em 2em ;
     border: solid 1px white ;
     border-radius: 2em ;
-    font-weight: bold ;
-    
-    
+    font-weight: bold ;   
 }
 
 #pulsante-upgrade:hover {
     transform: scale(1.1);
 }
 
-
 .menu-centrale {
-
     text-align: center;
     width: 50% ;
     margin: 0 auto ;
@@ -91,25 +129,20 @@ main {
     padding-bottom: .1em ;
 }
 
-
 .titolo {
-    margin: 1em 1em ;
-    font-size: 2em ;
-   
-    
+    margin: .5em .5em ;
+    font-size: 2em ;    
 }
 
 .suggerimenti {
     color: gray ;
-    margin: 0 1em ;
+    margin: .5em 0 1.5em 1em ;
     font-size: .8em ;
 }
 
 .galleria-flex {
     display: flex ;
     margin: 0 0 0 1em ;
-    
-
 }
 
 .album-galleria {
@@ -151,9 +184,6 @@ main {
     display: block ;
 }
 
-
-
-
 .album-galleria h4 {
     font-size: 1.3em ;
     font-weight: bold ;
@@ -168,32 +198,14 @@ main {
 
 .popolari .immagini-galleria>img {
     border-radius: 100% ;
-
 }
 
 .popolari .immagini-galleria>.overlay {
     border-radius: 100% ;
 }
 
-.barra-laterale {
-    width: 200px ;
-    height: 100% ;
-    background-color: #000000 ;
 
 
-
-}
-
-
-#laterale-superiore {
-    width: 100% ;
-    height: calc(100% - 80px);
-    min-height: 350px ;
-    display: flex ;
-    flex-direction: column ;
-    overflow-y: hidden ;
-
-}
 
 #logo {
     width: 80% ;
@@ -204,7 +216,6 @@ main {
    display: none ;
     width: 80% ;
     margin: 0 auto ;
-
 }
 
 #logo-xs img {
@@ -237,11 +248,8 @@ main {
 }
 
 #home {
-    
     border-left: 2px solid #adff2f ;
     padding-left: 1em  ;
-
-
 }
 
 
@@ -250,8 +258,7 @@ main {
     height: 2em ;
     background-color: grey;
     text-align: center ;
-    display: inline-block ;
-    
+    display: inline-block ;   
 }
 
 #playlist {
@@ -270,7 +277,6 @@ main {
 #playlist li {
     padding: .5em 0 ;
     font-size: .8em ;
-
 }
 
 #playlist li>a {
@@ -290,16 +296,10 @@ main {
 
 .fa-plus {
     color: black ;
-  
     line-height: 2em ;
-  
 }
 
-#laterale-inferiore {
-    width: 100% ;
-    height: 80px ;
-    
-}
+
 
 #installa {
     width: 90% ;
@@ -314,8 +314,7 @@ main {
 }
 
 #installa img {
-    height: 1em ;
-    
+    height: 1em ;   
     vertical-align: middle;
 }
 
@@ -328,9 +327,7 @@ main {
     width: 90% ;
     height: 50% ;
     margin: 0 auto ;
-    line-height: 40px ;
-    
-    
+    line-height: 40px ;  
 }
 
 #utente span {
@@ -348,31 +345,11 @@ main {
     border-radius: 1.5em ;
     display: inline-block ;
     vertical-align: middle ;
-   
 }
 
 
 
-.parte-centrale {
-    width: calc(100% - 200px) ;
-    height: 100% ;
-    overflow-y: scroll ;
-    padding-top: 120px ;
-    background-color: #141922 ;
 
-
-}
-
-
-
-footer {
-    width: 100%;
-    height: 100px ;
-    background-color: #282828 ;
-    display: flex ;
-    flex-direction: row ;
-    justify-content: space-between ;
-}
 
 .contenitore-flex {
     height: 100% ;
@@ -380,37 +357,27 @@ footer {
     flex-direction: row ;
     align-items: center ;
     color: white ;
-
 }
 
 #brano-artista {
     width: 350px ;
-    justify-content: space-evenly ;
-    
+    justify-content: space-evenly ;   
 }
 
 #miniatura-brano {
   width: 25% ;
   min-width: 30px ;
-  padding: 0 .5em ;
-
-   
+  padding: 0 .5em ;  
 }
 
 #miniatura-brano img {
-    width: 100% ;
-    
+    width: 100% ;    
 }
-
-
 
 #miniatura-info:hover {
     color: white ;
     text-decoration: underline ;
-
 }
-
-
 
 #info-brano span {
     display: block ;
@@ -428,14 +395,9 @@ footer {
     color: white ;
 }
 
-
-
-
 #controlli {
     padding: .2em ;
     font-size: 1em ;
-  
-
 }
 
 #controlli i {
@@ -454,16 +416,11 @@ footer {
 #durata {
     width: 40% ;
     min-width: 212px ;
-    flex-direction: column ;
-   
-
-    
+    flex-direction: column ;    
 }
 
 #tempo {
     width: 100% ;
- 
-
 }
 
 #tempo span {
@@ -473,7 +430,6 @@ footer {
 
 #durata span, #barra-tempo {
     display: inline-block ;
-
 }
 
 
@@ -483,9 +439,7 @@ footer {
     width: calc(100% - 88px) ;
     margin: 0 1em ;
     background-color: grey ;
-    border-radius: .2em ;
-    
-   
+    border-radius: .2em ;  
 }
 
 #barra-bianca {
@@ -507,7 +461,6 @@ footer {
     background-color: white ;
     transform: translateY(-.4em);
     visibility: hidden ;
-
 }
 
 #indicatore-volume {
@@ -519,7 +472,6 @@ footer {
     background-color: white ;
     transform: translateY(-.4em);
     visibility: hidden ;
-
 }
 
 #barra-tempo:hover #indicatore {
@@ -542,23 +494,20 @@ footer {
     visibility: visible ;
 }
 
-
-
 #volume {
     justify-content: flex-end ;
-    width: 350px ;
-   
+    width: 350px ;  
 }
 
 #volume * {
-    margin-right: 1.3em ;
-   
+    margin-right: 1.3em ;  
 }
 
 #volume i {
     font-size: .8em ;
 }
 
+/*REGOLE RESPONSIVE*/
 
 @media screen and (max-width: 1101px) and (min-width: 701px) {
 
@@ -577,6 +526,7 @@ footer {
 }
 
 @media screen and (max-width: 700px) and (min-width: 601px) {
+
     .galleria-flex {
         display: flex ;
         flex-wrap: wrap ;
@@ -591,6 +541,7 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+
     .galleria-flex {
         display: flex ;
         flex-wrap: wrap ;
@@ -612,8 +563,7 @@ footer {
         position: fixed ;
         right: 0 ;
         top: 0 ;
-        background-color: rgba(0, 0, 0, 0.5);
-        
+        background-color: rgba(0, 0, 0, 0.5);   
     }
 
     .parte-centrale {
@@ -622,17 +572,12 @@ footer {
         overflow-y: scroll ;
         padding-top: 120px ;
         background-color: #141922 ;
-    
-    
     }
 
     .barra-laterale {
         width: 50px ;
         height: 100% ;
         background-color: #000000 ;
-    
-    
-    
     }
 
     #logo {
@@ -646,7 +591,6 @@ footer {
         width: 90% ;
         margin: 0 auto ;
         padding: .3em .3em ;
-    
     }
 
     #logo-xs img {
@@ -687,6 +631,10 @@ footer {
     
     #utente span {
         display: none ;
+    }
+
+    #miniatura-brano {
+        width: 40% ;
     }
 
 }
