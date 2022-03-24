@@ -220,7 +220,7 @@ main {
     margin: .5em 1em ;   
 }
 
-#nav div:hover {
+#nav span:hover {
     color: white ;
 }
 
@@ -230,6 +230,11 @@ main {
 
 #crea:hover #plus {
     background-color: white ;
+}
+
+#home {
+    border-left: 2px solid #adff2f ;
+
 }
 
 
@@ -645,6 +650,35 @@ footer {
         padding: 0 1em;
         flex-grow: 1 ;
         overflow: hidden;
+    }
+
+    #nav span {
+        display: none ;
+    }
+
+    #home {
+        border: none ;
+    }
+
+    #installa {
+        width: 90% ;
+        height: 50% ;
+        margin: 0 auto;
+        line-height: 40px ;
+        border: none ;
+        text-align: center ;
+    }
+
+    #installa span {
+        display: none ;
+    }
+
+    #utente {
+        text-align: center ;
+    }
+    
+    #utente span {
+        display: none ;
     }
 
 }
